@@ -1,0 +1,26 @@
+[project]
+name = "paper-summary"
+version = "0.1.0"
+description = "Summarize PDF research paper."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "black>=25.1.0",
+    "isort>=6.0.1",
+    "langchain>=0.3.27",
+    "langchain-community>=0.3.29",
+    "langchain-ollama>=0.3.7",
+    "pylint>=3.3.8",
+    "pymupdf>=1.26.4",
+    "pypdf>=6.0.0",
+    "python-dotenv>=1.1.1",
+]
+[tool.pylint.MASTER]
+ignore = [
+    "migrations",
+    ".venv",
+    "build",
+    "generated_code",
+    "legacy",
+    "__pycache__",
+]
